@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+
+    <h1>Cadastro de Produtos</h1>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="produtos.html">Lista de Produtos</a>
+    </nav>
+
+    <!-- Formulário para preencher os dados de um produto -->
+    <form action="#" method="post">
+
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="codigo">Código do produto:</label>
+        <input type="number" id="codigo" name="codigo" required>
+        <br><br>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco"
+               min="0" step="0.01" required>
+        <br><br>
+
+        <!-- Select cria uma lista de opções para escolher a categoria -->
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="alimentos">Alimentos</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="limpeza">Limpeza</option>
+            <option value="higiene">Higiene pessoal</option>
+        </select>
+        <br><br>
+
+        <!-- Date permite selecionar uma data no calendário -->
+        <label for="validade">Data de validade:</label>
+        <input type="date" id="validade" name="validade">
+        <br><br>
+
+        <!-- Number permite informar a quantidade em estoque -->
+        <label for="estoque">Quantidade em estoque:</label>
+        <input type="number" id="estoque" name="estoque" min="0">
+        <br><br>
+
+        <!-- File permite selecionar um arquivo do computador -->
+        <label for="imagem">Imagem do produto:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*">
+        <br><br>
+
+        <!-- Checkbox permite marcar uma opção -->
+        <input type="checkbox" id="promocao" name="promocao">
+        <label for="promocao">Produto em promoção</label>
+        <br><br>
+
+        <input type="submit" value="Cadastrar Produto">
+        <input type="reset" value="Limpar Campos">
+
+    </form>
+
+</body>
+</html>
