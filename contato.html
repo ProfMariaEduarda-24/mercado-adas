@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Supermercado EduMarket</title>
+</head>
+
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Entre em Contato</h1>
+
+    <p>
+        Ficou com alguma dúvida ou precisa de ajuda?
+        Entre em contato conosco!
+    </p>
+
+    <!-- Menu para navegar entre as páginas do supermercado -->
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="produtos.html">Lista de Produtos</a> |
+        <a href="cadastro-produtos.html">Cadastrar Produtos</a> |
+        <a href="clientes.html">Lista de Clientes</a> |
+        <a href="cadastro-clientes.html">Cadastrar Clientes</a> |
+    </nav>
+
+    <hr>
+
+    <h2>Formulário de Contato</h2>
+
+    <!-- Formulário para o visitante preencher seus dados -->
+    <form action="#" method="post">
+
+        <!-- Campo para informar o nome -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- Campo específico para endereço de e-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Campo para informar o telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"
+               placeholder="(47) 99999-9999">
+        <br><br>
+
+        <!-- Campo para selecionar a data -->
+        <label for="data">Data do contato:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+
+        <!-- Campo para selecionar data e horário juntos -->
+        <label for="datahora">Melhor data e horário para contato:</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+        <br><br>
+
+        <!-- Radio buttons: permite escolher apenas uma opção -->
+        <p>Qual é o motivo do contato?</p>
+
+        <input type="radio" id="duvida" name="motivo" value="duvida">
+        <label for="duvida">Dúvida</label>
+        <br>
+
+        <input type="radio" id="reclamacao" name="motivo" value="reclamacao">
+        <label for="reclamacao">Reclamação</label>
+        <br>
+
+        <input type="radio" id="sugestao" name="motivo" value="sugestao">
+        <label for="sugestao">Sugestão</label>
+        <br><br>
+
+        <!-- Checkbox: permite marcar uma opção -->
+        <input type="checkbox" id="retorno" name="retorno" value="sim">
+        <label for="retorno">Desejo receber uma resposta sobre meu contato.</label>
+        <br><br>
+
+        <!-- Textarea permite escrever uma mensagem com várias linhas -->
+        <label for="mensagem">Escreva sua mensagem:</label>
+        <br>
+        <textarea id="mensagem" name="mensagem"
+                  rows="5" cols="40"
+                  placeholder="Digite sua mensagem aqui..."></textarea>
+        <br><br>
+
+        <!-- Botões para enviar ou limpar os campos -->
+        <input type="submit" value="Enviar Mensagem">
+        <input type="reset" value="Limpar Campos">
+
+    </form>
+
+    <hr>
+
+    <!-- Seção de contato direto pelo WhatsApp -->
+    <h2>Fale conosco pelo WhatsApp</h2>
+
+    <p>
+        Precisa de um atendimento mais rápido?
+        Clique no link abaixo para conversar conosco pelo WhatsApp.
+    </p>
+
+    <!--
+        O link wa.me abre uma conversa no WhatsApp.
+        Substitua o número de exemplo pelo número correto da loja.
+        Use o código do país (55), o DDD e o telefone,
+        sem espaços, parênteses, traços ou sinais de mais.
+        Exemplo fictício: 5547999999999.
+        O atributo target="_blank" abre o link em outra aba.
+    -->
+    <a href="https://wa.me/554796474045" target="_blank">
+        Abrir conversa no WhatsApp
+    </a>
+
+    <hr>
+
+    <!-- Informações de contato do supermercado -->
+    <h2>Informações do Supermercado</h2>
+
+    <p>Telefone: (47) 996474045</p>
+    <p>E-mail: contato@edumarket.com.br</p>
+    <p>Horário de atendimento: segunda a sábado, das 8h às 20h.</p>
+
+    <hr>
+
+    <!-- Link para retornar à página inicial -->
+    <p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </p>
+
+</body>
+
+</html>
