@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+
+    <h1>Cadastro de Clientes</h1>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="clientes.html">Lista de Clientes</a>
+    </nav>
+
+    <form action="#" method="post">
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- Email valida o formato básico de um endereço de e-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Tel é destinado ao preenchimento de números de telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+
+        <!-- Password oculta visualmente os caracteres digitados -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+        <br><br>
+
+        <!-- Radio permite escolher apenas uma opção do mesmo grupo -->
+        <p>Sexo:</p>
+
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="outro" name="sexo" value="outro">
+        <label for="outro">Outro</label>
+
+        <br><br>
+
+        <!-- Color permite escolher uma cor -->
+        <label for="cor">Cor favorita:</label>
+        <input type="color" id="cor" name="cor">
+        <br><br>
+
+        <input type="checkbox" id="aceite" name="aceite" required>
+        <label for="aceite">Confirmo os dados informados.</label>
+        <br><br>
+
+        <input type="submit" value="Cadastrar Cliente">
+        <input type="reset" value="Limpar Campos">
+
+    </form>
+
+</body>
+</html>
